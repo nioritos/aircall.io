@@ -1,0 +1,17 @@
+#header, .navigator, .container-list, .tell-us, .tell-box {
+    display: flex;
+}
+
+#header  {
+    flex-direction: column;
+}
+
+.tell-us {
+    order: 1;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.navigator {
+    order: 2;
+}
