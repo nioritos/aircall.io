@@ -59,8 +59,19 @@
 }
 
 .list-nav a {
+    display: flex;
+    align-items: center;
+
     color: var(--color-normal-links);
     font-weight: 500;
+}
+.dropper-arrow {
+    margin: 0 0.5rem;
+}
+
+.top-top {
+    transition: var(--transition-normal);
+    transform: rotateX(180deg);
 }
 
 .list-nav a:hover {
