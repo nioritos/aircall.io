@@ -1,0 +1,12 @@
+@media (max-width: 975px) {
+    .first-nav, .box-list {
+        display: none;
+        overflow: hidden;
+        opacity: 0;
+    }
+    #logo-nav {
+        opacity: 1 !important;
+        display:initial;
+        overflow:visible;
+    }
+}

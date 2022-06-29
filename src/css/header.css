@@ -1,4 +1,4 @@
-#header, .navigator, .container-list, .tell-us, .tell-box {
+#header, .navigator, .container-list, .tell-us, .tell-box, .box-list, .first-nav {
     display: flex;
 }
 
@@ -6,12 +6,102 @@
     flex-direction: column;
 }
 
+.tell-us, .tell-box {
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .tell-us {
+    margin-top: 1rem;
     order: 1;
     height: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.tell-list {
+    margin-left: var(--left-margin-tell-us);
+    font-size: var(--font-size-tell-us);
+    font-weight: 400;
+}
+
+.tell-login {
+    padding: 0.3rem 1rem;
+    border: 1px var(--normal-color-theme) solid;
+    border-radius: 0.3rem;
+}
+
+.tell-login a {
+    color: var(--normal-color-theme);
+    font-weight: 600;
+}
+
+.tell-language select {
+    padding: 0.3rem;
+    border-color: rgb(190, 190, 190);
+    border-radius: 0.2rem;
+}
+
+.tell-login:hover {
+    transition: var(--transition-normal);
+    border-color: var(--hover-login-color);
 }
 
 .navigator {
     order: 2;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-nav {
+    margin-left: var(--left-margin-nav);
+}
+
+.list-nav a {
+    color: var(--color-normal-links);
+    font-weight: 500;
+}
+
+.list-nav a:hover {
+    transition: var(--transition-normal);
+    color: var(--normal-color-theme);
+}
+
+.box-list, .first-nav{
+    align-items: center;
+}
+
+.double-list:nth-child(1) {
+    margin-right: 1rem;
+    background: var(--background-demo);
+    padding: 0.8rem 0.6rem;
+    border-radius: 0.2rem;
+}
+
+.double-list:nth-child(1):hover {
+    transition: var(--transition-normal);
+    background: var(--background-demo-hover);
+}
+
+.double-list:nth-child(1) a {
+    color: var(--hover-login-color);
+    font-weight: 600;
+}
+
+.double-list:nth-child(2) {
+    background: var(--normal-color-theme);
+    padding: 0.8rem 0.6rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.double-list:nth-child(2):hover {
+    transition: var(--transition-normal);
+    background: var(--background-try-hover);
+}
+
+.double-list:nth-child(2) a {
+    font-weight: 600;
+    color: #fff;
 }
