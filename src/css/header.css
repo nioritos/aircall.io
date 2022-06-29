@@ -105,3 +105,28 @@
     font-weight: 600;
     color: #fff;
 }
+
+.menu-mobile {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator-mobile{ 
+    display: none;
+
+}
+
+.menu-mobile{ 
+    cursor: pointer;
+}
+
+.line { 
+    margin: 0.2rem 0;
+    width: 25px;
+    height: 3px;
+    background: #00B388;
+    transition: transform 0.20s ease-out;
+}

@@ -1,12 +1,32 @@
 @media (max-width: 975px) {
-    .first-nav, .box-list {
-        display: none;
-        overflow: hidden;
-        opacity: 0;
+    .navigator-mobile{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        order: 2;
     }
-    #logo-nav {
-        opacity: 1 !important;
-        display:initial;
-        overflow:visible;
+    .navigator ,.first-nav, .box-list {
+        display: none !important;
+        
+    }
+}
+
+@media (max-width: 880px) {
+    .image-home, .himg {
+        display: none;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .home{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-home {
+        margin-left: 2.3rem;
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
     }
 }
